@@ -2,9 +2,13 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This react webpart app lists the last 10 emails in your inbox using microsoft graph api, then connects to a third party api -spring boot app- for analyses.
 
-[picture of the solution in action, if possible]
+Technologies and frameworks uesed in frontend:
+1- Microsoft sharepoint framework
+2- React with typescript
+3- Office-fabric-react-ui library
+4- CDN to serve html\css and js when deployed to sharepoint app-catalog
 
 ## Used SharePoint Framework Version
 
@@ -15,54 +19,24 @@ Short summary on functionality and used technologies.
 - [SharePoint Framework](https://aka.ms/spfx)
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
 ## Prerequisites
 
-> Any special pre-requisites?
+To run it localy:
 
-## Solution
+1- Run (docker run --name email-ana -p 8080:8080 heshamosman28/email-analyser:latest) to get the backend app up and running
+2- Install nodejs lts version 10 (the last supported verion in sharepoint -don't use version14-)
+3- Install gulp (npm install gulp --global)
+4- Clone this repository
+5- Go to the application folder and run (npm install)
+6- Run (gulp trust-dev-cert)
+7- Run (gulp serve)
+8- A new browser tab will open click the plus (+) button
+9- Choose (lazy-email-viewer)
+10- Now you should see a table with the emails and two boxes with the analysis
 
-Solution|Author(s)
---------|---------
-folder name | Author details (name, company, twitter alias with link)
+To run it on Sharepoint:
 
-## Version history
-
-Version|Date|Comments
--------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
-
-## Disclaimer
-
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
-
-## Minimal Path to Awesome
-
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
-
-## Features
-
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+TBD.....
 
 ## References
 

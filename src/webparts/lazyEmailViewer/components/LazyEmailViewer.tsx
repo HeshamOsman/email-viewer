@@ -20,7 +20,7 @@ export default class LazyEmailViewer extends React.Component<
   ILazyEmailViewerProps,
   ILazyEmailViewerState
 > {
-  baseEmailAnalyserURL: string = "https://a4233b45bc5e.ngrok.io";
+  baseEmailAnalyserURL: string = "http://localhost:8080"; //"https://a4233b45bc5e.ngrok.io";
   constructor(props: ILazyEmailViewerProps) {
     super(props);
     this.state = {
