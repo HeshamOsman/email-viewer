@@ -28,7 +28,7 @@ This react webpart app lists the last 10 emails in your inbox using microsoft gr
 ## To run it localy:
 
 - Run (docker run --name email-ana -p 8080:8080 heshamosman28/email-analyser:latest) to get the backend app up and running
-- Install gulp (npm install gulp --global)
+- Install gulp (`properties npm install gulp --global`)
 - Clone this repository
 - Go to the application folder and run (npm install)
 - Run (gulp trust-dev-cert)
