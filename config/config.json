@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lazy-email-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lazyEmailViewer/LazyEmailViewerWebPart.js",
+          "manifest": "./src/webparts/lazyEmailViewer/LazyEmailViewerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LazyEmailViewerWebPartStrings": "lib/webparts/lazyEmailViewer/loc/{locale}.js"
+  }
+}
